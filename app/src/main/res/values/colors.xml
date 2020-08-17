@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!-- System colors-->
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <!--end-->
+
+    <!-- Vikum IT19167992-->
+    <color name="offwihte">#ECEEEE</color>
+    <color name="grey">#AAAAAA</color>
+    <color name="white">#fff</color>
+    <color name="purple">#7B9EF6</color>
+    <color name="trans">#00AAAAAA</color>
+    <color name="black">#000000</color>
+    <color name="darkblue">#295678</color>
+    <color name="lightblude">#50A0C7</color>
+    <color name="shadowgrey">#BE9F9898</color>
+    <color name="orange">#FF4800</color>
+    <color name="coolblue">#8AD6ECFE</color>
+    <!--end-->
+
+    <!--ashini 19136134-->
+    <color name="borderGrey">#E8E8E8</color>
+    <!--end-->
+
+    <!--sanduni IT19167992-->
+    <color name="chatWhite">#E3EBF0</color>
+    <color name="shadow_mid_color">#8C8585</color>
+    <!--end-->
+
+    <!--mith IT19135830-->
+
+    <!--end-->
+</resources>

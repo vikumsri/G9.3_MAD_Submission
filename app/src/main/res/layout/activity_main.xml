@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+        <!--Top navigation-->
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/toplayout">
+
+            <LinearLayout
+                android:id="@+id/liner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/relativelayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/top_navigation"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/top_logo">
+                    </ImageView>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mid_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--remove below comment to make it normal-->
+            <!--android:layout_below="@+id/mid_layout"-->
+
+            <!--Include your layouts from-->
+
+
+        </RelativeLayout>
+        <!--<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mid_layout"
+            android:background="@color/trans">-->
+            <include layout="@layout/bot_slider"/>
+        <!-- </RelativeLayout>-->
+
+
+    </RelativeLayout>
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+

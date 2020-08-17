@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.ChatList_sFragment">
+
+    <LinearLayout
+        android:id="@+id/liner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/relativelayout1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/top_navigation"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/backbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/ic_back_s"
+                android:layout_centerVertical="true" />
+            <ImageView
+                android:id="@+id/ic_search_icon_s"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@id/backbtn"
+                android:background="@drawable/ic_search_icon_s"
+                android:layout_marginRight="310dp"
+                >
+            </ImageView>
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:hint="@string/search_hint_s"
+                android:textColorHint="@color/white"
+                android:layout_marginLeft="80dp"
+                android:textColor="@color/white"
+                android:background="@null"
+                >
+            </EditText>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/chat_list_recycle_view"
+        android:layout_below="@id/liner1"/>
+
+</RelativeLayout>

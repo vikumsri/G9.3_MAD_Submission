@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    app:umanoDragView="@id/dragview"
+    app:umanoScrollableView="@id/listview"
+    android:layout_gravity="bottom"
+    android:gravity="bottom"
+    app:umanoPanelHeight="30dp"
+    app:umanoOverlay="false"
+    app:umanoParallaxOffset="0dp"
+    app:umanoShadowHeight="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/trans">
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dragview"
+        android:clickable="true"
+        android:background="@color/trans"
+        android:focusable="false"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@drawable/bot_slider"
+            android:orientation="vertical"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/ic_up" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listview"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:orientation="vertical"
+            android:background="@color/purple">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp"
+                android:paddingLeft="35dp"
+                >
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="25dp"
+
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/feed_icon"
+                    >
+                </ImageButton>
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="65dp"
+
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/search_icon">
+
+                </ImageButton>
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ic_notification"
+                    android:layout_marginLeft="65dp"
+
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="20dp">
+                </ImageButton>
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="65dp"
+
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/home_icon">
+                </ImageButton>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <!--The notification panel interface is made from this layout-->
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--Top navigation-->
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--Top Navigation-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/toplayout">
+
+            <LinearLayout
+                android:id="@+id/liner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/relativelayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/top_navigation"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:textAlignment="center"
+                    >
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:id="@+id/ic_search_icon_m"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/ic_notification_icon_m"
+
+                        >
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/notification_tag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="@string/notification_m"
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/white"
+                        android:textSize="25dp"
+                        android:layout_toRightOf="@+id/ic_search_icon_m"
+                        >
+
+                    </TextView>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/mid_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toplayout">
+
+        </RelativeLayout>
+
+
+        <!--Center view -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mid_layout"
+            android:background="@color/trans">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toplayout"
+                android:orientation="vertical"
+                tools:ignore="NotSibling">
+
+                <GridView
+                    android:id="@+id/notif_grid_m"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:numColumns="1">
+
+                </GridView>
+
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

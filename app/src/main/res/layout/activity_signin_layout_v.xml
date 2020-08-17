@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="282dp"
+        android:background="@color/purple"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/signin_shape_1">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/signin_shape_2">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="262dp"
+                    android:background="@drawable/signin_shape_3">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="266dp"
+                        android:background="@drawable/signin_shape_4">
+
+                        <!-- white part -->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="244dp"
+                            android:background="@drawable/signin_shape_5">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_centerInParent="true"
+                                app:cardCornerRadius="60dp"
+                                app:cardBackgroundColor="#8AD6ECFE"
+
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="120dp"
+                                    android:layout_height="120dp"
+
+                                    android:src="@drawable/logo_1_a"/>
+
+                            </androidx.cardview.widget.CardView>
+
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!-- bottom shapes-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="282dp"
+
+        android:background="@color/purple"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/signin_shape_bot_1">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/signin_shape_bot_2">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/signin_shape_bot_3">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/signin_shape_bot_4">
+
+                        <!-- white part -->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentBottom="true"
+                            android:background="@drawable/signin_shape_bot_5">
+
+                            <!--text box and button area-->
+
+                            <EditText
+                                android:id="@+id/emailTxtbox"
+                                android:layout_width="match_parent"
+                                android:layout_marginLeft="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="150dp"
+                                android:inputType="textEmailAddress"
+                                android:layout_centerHorizontal="true"
+                                android:textColorHint="@color/purple"
+                                android:hint="@string/emailhint"/>
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_marginLeft="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="10dp"
+                                android:inputType="textPassword"
+                                android:textColorHint="@color/purple"
+                                android:hint="@string/passwordhint"
+                                android:id="@+id/passwordtxtbox"
+                                android:layout_below="@+id/emailTxtbox"/>
+                            <Button
+                                android:id="@+id/signinbtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="100dp"
+                                android:layout_centerInParent="true"
+                                android:layout_below="@+id/passwordtxtbox"
+                                android:text="@string/sign_in"
+                                android:clickable="true"
+                                android:textSize="18dp"
+                                android:textColor="@color/white"
+                                android:background="@drawable/button_style_1_v"
+                                android:layout_marginTop="12dp"/>
+                            <TextView
+                                android:id="@+id/forgotpassword"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_below="@+id/signinbtn"
+                                android:clickable="true"
+                                android:text="@string/forgotPasswords"
+                                android:layout_marginTop="6dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_below="@+id/forgotpassword"
+                                android:text="@string/newUser"
+                                android:clickable="true"
+                                android:layout_marginTop="70dp"/>
+
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

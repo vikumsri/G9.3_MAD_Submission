@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--IT19135134-->
+<!--Ashini Kulatunga-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--Top profile-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/topLayout">
+
+        <include layout="@layout/top_previous_posts_a"/>
+    </RelativeLayout>
+
+    <!--grid view to show the previous post in a grid-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topLayout"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/mid_layout" >
+
+        <GridView
+            android:id="@+id/gridViewPostsFriend"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:footerDividersEnabled="false"
+            android:padding="5dp"
+            android:verticalSpacing="5dp"
+            android:horizontalSpacing="5dp"
+            android:numColumns="3"
+            android:scrollbars="vertical"
+            android:fadeScrollbars="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include layout="@layout/bot_slider" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- system strings-->
+    <string name="app_name">AffixPaws</string>
+    <!--    end-->
+
+    <!--    ashini IT19136134-->
+    <string name="about_me">About me</string>
+    <string name="user_profile_name_a">Shadow 17</string>
+    <string name="description_a">I am a German Shepared Who likes to play all the  Day. I likey any one who plays with me</string>
+    <string name="collection_a">Collection</string>
+    <string name="viewers_a">Viewers</string>
+    <string name="viewing_a">Viewing</string>
+    <string name="posts_a">Posts</string>
+    <string name="profile_username_a">Shadow Boy</string>
+    <string name="viewer_count_a">35K</string>
+    <string name="viewing_count_a">356</string>
+    <string name="posts_count_a">15</string>
+    <string name="otherfav_count_a">20</string>
+    <string name="otherfav_a">Other Fav</string>
+    <string name="friend_profile_full_name_a">Snow Ball</string>
+    <string name="frined_viewer_count_a">25K</string>
+    <string name="friend_viewing_count_a">200</string>
+    <string name="friend_posts_count_a">10</string>
+    <string name="friend_otherfav_count_a">15</string>
+    <string name="friend_username">Snow Bunny</string>
+    <string name="friend_description_a">My cutenest is my cover. I am little bunny your friend</string>
+    <string name="previous_posts">Previous Posts</string>
+    <string name="favourites_posts">Favourites</string>
+    <string name="comment_a">5</string>
+    <string name="favourite_a">3</string>
+    <string name="likes_a">25K</string>
+    <!--    end-->
+
+    <!-- vikum IT19134536-->
+    <string name="sign_in">Sign In</string>
+    <string name="forgotPasswords">Forgot Passwords</string>
+    <string name="passwordhint">Password</string>
+    <string name="emailhint">Email/Username</string>
+    <string name="username_reg">Username</string>
+    <string name="email_reg">Email</string>
+    <string name="password_reg">Password</string>
+    <string name="confirm_password_reg">Confirm Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="haveAccount">Already have an account? Sign in</string>
+    <string name="newUser">New user? Register</string>
+    <string name="enter_caption">Enter Caption Here</string>
+    <string name="cancel_text">Cancel</string>
+    <string name="post_text">Post</string>
+
+
+
+
+
+
+    <!--end-->
+
+    <!--mithma IT19135830-->
+    <string name="search_friends_hint_m">Search For Friends...</string>
+    <string name="search_user_name_m">Username</string>
+    <string name="search_profilename_m">ProfileName</string>
+    <string name="search_followers_hint_m"> Search Followers...</string>
+    <string name="search_following_hint_m">Search Following...</string>
+    <string name="notification_m">Notifications</string>
+    <string name="notification_username_m">Username</string>
+    <string name="notification_action_m">action</string>
+    <!-- end-->
+
+    <!--sanduni IT19167992-->
+    <string name="search_hint_s">Search</string>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--    end-->
+
+
+</resources>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

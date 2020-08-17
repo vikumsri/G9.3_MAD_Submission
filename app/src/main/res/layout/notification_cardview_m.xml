@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- the cardview which shows the profile picture and action taken to the post is shown through this layout-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:ignore="ExtraText">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_margin="10dp"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            tools:ignore="MissingConstraints"
+            app:cardBackgroundColor="@color/notification_blue_m">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="285dp"
+                android:src="@drawable/sample_img_for_search_m"
+                app:civ_border_color="@color/purple"
+                app:civ_border_width="5dp"
+                android:id="@+id/notif_prof_pic_m"/>
+
+
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="131dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/notif_profilename_m"
+                    android:layout_height="40dp"
+                    android:layout_width="150dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/notification_username_m"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal"
+                    android:textSize="20dp"
+                    >
+                </TextView>
+
+            <TextView
+                android:id="@+id/notif_action_m"
+                android:layout_height="40dp"
+                android:layout_width="150dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="50dp"
+                android:text="@string/notification_action_m"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:textSize="20dp"
+                >
+            </TextView>
+
+            </RelativeLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginLeft="285dp"
+                android:src="@drawable/sample_img_for_search_m"
+                app:civ_border_color="@color/purple"
+                app:civ_border_width="5dp" />
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

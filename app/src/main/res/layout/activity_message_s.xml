@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Message_Activity_s">
+    <!--Top navigation-->
+
+    <!--bottom navigation send message-->
+    <RelativeLayout
+        android:id="@+id/relativeLayout_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--Top Navigation-->
+        <RelativeLayout
+            android:id="@+id/toplayout"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <LinearLayout
+                android:id="@+id/liner1"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/relativelayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/top_navigation"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/backbtn"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="45dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/ic_back_s"
+                        />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/message_dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/drawble_snow_ball_s"
+                        app:civ_border_color="@color/purple"
+                        android:layout_marginLeft="45dp"
+                        android:layout_toRightOf="@+id/friend_name"
+                        app:civ_border_width="3dp"/>
+
+                    <TextView
+                        android:id="@+id/friend_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="51dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/chat_friend_name"
+                        android:textColor="@color/white"
+                        android:layout_centerVertical="true"
+                        android:textSize="30dp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/chat_recycle_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="65dp"
+            android:layout_above="@+id/bottom_relativeLayout"
+            android:layout_below="@+id/toplayout"
+            android:fadeScrollbars="true"
+            android:scrollbars="vertical"
+            tools:ignore="NotSibling" />
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+ <RelativeLayout
+     android:id="@+id/bottom_relativeLayout"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:background="@color/white"
+     android:layout_alignParentBottom="true"
+      android:padding="5dp">
+
+     <EditText
+         android:id="@+id/text_send"
+         android:layout_width="match_parent"
+         android:layout_height="50dp"
+         android:layout_toLeftOf="@+id/btn_send"
+         android:layout_centerVertical="true"
+         android:padding="15dp"
+         android:hint="@string/send_message_s"
+         android:background="@drawable/edit_text_border_s"
+         />
+
+     <ImageButton
+         android:id="@+id/btn_send"
+         android:layout_width="40dp"
+         android:layout_height="40dp"
+         android:layout_alignParentEnd="true"
+         android:layout_centerVertical="true"
+         android:layout_alignParentRight="true"
+         android:background="@drawable/ic_send_s"
+         />
+
+ </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--Top navigation-->
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--Top Navigation-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/toplayout">
+
+            <LinearLayout
+                android:id="@+id/liner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/relativelayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/top_navigation"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/ic_search_icon_m"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/ic_search_icon_m"
+                        android:layout_marginRight="310dp">
+                    </ImageView>
+
+                    <EditText
+                        android:layout_width="300dp"
+                        android:layout_height="40dp"
+                        android:hint="@string/search_friends_hint_m"
+                        android:textColorHint="@color/white"
+                        android:layout_marginLeft="40dp"
+                        android:textColor="@color/white"
+                        android:background="@null"
+                        >
+
+                    </EditText>
+
+                </RelativeLayout>
+
+
+
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mid_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toplayout">
+
+        </RelativeLayout>
+
+
+        <!--Center view -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mid_layout"
+            android:background="@color/trans">
+
+<!--            <include layout="@layout/friend_search_cardview_m"/>-->
+
+            <GridView
+                android:id="@+id/friend_search_gridview_m"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numColumns="2"
+
+
+            />
+
+
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
